@@ -29,13 +29,15 @@ const foodILike=[
  }
 ];
 
+function renderFood(dish){
+  return <Food name={dish.name} picture={dish.image}/>;
+}
+
 function App() {
-  //return <div className="App" />;
+  console.log(foodILike.map(renderFood));
   return (
     <div>
-      {foodILike.map(dish=>(
-        <Food name={dish.name} picture={dish.image}/>
-      ))}
+      {foodILike.map(renderFood)}
     </div>
   );
 }
