@@ -21,8 +21,9 @@
 }
 
 .nav a {
+    padding:10px 0;
     text-decoration: none;
-    color:#0008fc;
+    color:#333;
     text-transform: uppercase;
     font-size:12px;
     text-align:center;
